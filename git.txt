@@ -1,0 +1,26 @@
+# 1. 進入你的專案資料夾（如果還沒cd進去）
+cd 你的專案路徑
+
+# 2. 初始化 Git 倉庫
+git init
+
+# 3. 查看目前分支名稱（通常是 master）
+git branch
+
+# 4. 將當前分支改名為 main
+git branch -m master main
+
+# 5. （選擇性）確認分支改名成功
+git branch
+
+# 6. 新增所有檔案到 Git 暫存區
+git add .
+
+# 7. 提交修改
+git commit -m "Initial commit"
+
+# 8. 新增遠端倉庫，換成你的 GitHub repo URL
+git remote add origin https://github.com/你的帳號/你的倉庫名稱.git
+
+# 9. 推送 main 分支到遠端，並設定 upstream（追蹤遠端分支）
+git push -u origin main

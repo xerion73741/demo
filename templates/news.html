@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>長照新聞</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .banner { background: url('/static/banner.jpg') center/cover; height: 300px; color: white; display: flex; align-items: center; justify-content: center; }
+    .banner h1 { font-size: 3rem; background-color: rgba(0,0,0,0.5); padding: 20px; border-radius: 10px; }
+    .section { padding: 40px 0; }
+  </style>
+</head>
+<body>
+  <header class="container mt-3">
+
+  </header>
+
+  <main class="container mt-4">
+    <h1>最新新聞</h1>
+    <ul>
+        {% for news in news_list %}
+        <li>
+            <h3><a href="{{ news.link }}">{{ news.title }}</a></h3>
+            <p>{{ news.context }}</p>
+            {% if news.img != '無圖片' %}
+                <img src="{{ news.img }}" alt="新聞照片">
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+    <footer>
+  <p><small>取自：<a href="https://www.twreporter.org/tag/58e5b2660f56b40d001ae6ea" target="_blank" rel="noopener noreferrer">報導者網站</a></small></p>
+</footer>
+</main>
+
+  <footer class="text-start py-3 container">
+    &copy; 2025 長照專案
+  </footer>
+
+  <!-- Bootstrap JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function updateTime() {
+      const now = new Date();
+      const formattedTime = now.toLocaleString('zh-TW', { hour12: false });
+      document.getElementById('current-time').textContent = formattedTime;
+    }
+    setInterval(updateTime, 1000);
+    updateTime();
+  </script>
+</body>
+</html>

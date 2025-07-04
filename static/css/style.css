@@ -1,0 +1,64 @@
+body {
+  font-family: "微軟正黑體", sans-serif;
+  margin: 0;
+  background: #f8f8f8;
+  color: #333;
+}
+
+.header {
+  background: #005f73;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.header nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.banner {
+  background: #94d2bd;
+  color: #073b4c;
+  padding: 3rem;
+  text-align: center;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background: #fff;
+}
+
+.service-card {
+  width: 300px;
+  margin: 1rem;
+  padding: 1rem;
+  background: #e0e0e0;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.cta {
+  text-align: center;
+  margin: 2rem;
+}
+
+.btn {
+  background: #ee9b00;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+footer {
+  background: #005f73;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
