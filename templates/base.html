@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>長照服務平台</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .banner { background: url('/static/banner.jpg') no-repeat; background-size: cover; background-position: center 35%; height: 300px; color: white; display: flex; align-items: center; justify-content: center; }
+    .banner h1 { font-size: 3rem; background-color: rgba(0,0,0,0.5); padding: 20px; border-radius: 10px; }
+    .section { padding: 40px 0; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">長照系統</a>
+
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          {% if userName %}
+          <li class="nav-item"><span class="nav-link">歡迎 {{ userName }}</span></li>
+          <li class="nav-item"><a class="nav-link" href="/logout">登出</a></li>
+          {% else %}
+          <li class="nav-item"><a class="nav-link" href="/login">登入</a></li>
+          <li class="nav-item"><a class="nav-link" href="/register">註冊</a></li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="banner">
+    <h1>長照服務平台</h1>
+  </div>
+  
+<p>現在時間：<span id="current-time"></span></p>
+
+  <div class="container section">
+    <h2 class="text-center mb-4">服務專區</h2>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <h4>申辦指南</h4>
+        <p>了解如何申請長照服務。</p>
+      </div>
+      <div class="col-md-4">
+        <h4>長照新聞</h4>
+        <p><a href="{{ url_for('news') }}">長照新聞</a></p>
+      </div>
+      <div class="col-md-4">
+        <h4>服務據點</h4>
+        <p><a href="{{ url_for('search') }}">查詢各地長照中心位置。</a></p>
+      </div>
+      <div class="col-md-4">
+        <h4>資源整合</h4>
+        <p>多元長照資源一站式服務。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container section bg-light">
+    <h2 class="text-center mb-4">最新消息</h2>
+  </div>
+        {% block content %}{% endblock content %}
+  <footer class="bg-dark text-white text-center p-3 mt-4">長照服務平台 &copy; 2025</footer>
+    <script>
+    function updateTime() {
+      const now = new Date();
+      const formattedTime = now.toLocaleString('zh-TW', { hour12: false });
+      document.getElementById('current-time').textContent = formattedTime;
+    }
+    setInterval(updateTime, 1000);
+    updateTime();
+  </script>
+</body>
+</html>

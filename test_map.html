@@ -1,0 +1,1949 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_75d2b6383407c22561315e3bf426c79d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_75d2b6383407c22561315e3bf426c79d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_75d2b6383407c22561315e3bf426c79d = L.map(
+                "map_75d2b6383407c22561315e3bf426c79d",
+                {
+                    center: [24.411635336945444, 120.95572266020909],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1a32a846937589c667009a7f1802f2dd = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_1a32a846937589c667009a7f1802f2dd.addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+            var marker_1a187a905f36f89a43d7e1eb4e7d6ede = L.marker(
+                [22.6651134491, 120.2986602783],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_f899a723e5e12a69fb010529b52986f3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_865fb57cd82c4c9518d0a09005bb5992 = $(`<div id="html_865fb57cd82c4c9518d0a09005bb5992" style="width: 100.0%; height: 100.0%;">機構名稱: 高雄市私立文宗老人長期照顧中心（養護型）<br>地址: 高雄市鼓山區明誠里文忠路123號</div>`)[0];
+                popup_f899a723e5e12a69fb010529b52986f3.setContent(html_865fb57cd82c4c9518d0a09005bb5992);
+            
+        
+
+        marker_1a187a905f36f89a43d7e1eb4e7d6ede.bindPopup(popup_f899a723e5e12a69fb010529b52986f3)
+        ;
+
+        
+    
+    
+            var marker_6a518c7614b7318aa0d4dbab11e10d66 = L.marker(
+                [22.7101764679, 120.290184021],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_48264abda0703c25fe6e870d82d3e4f4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5ace063afb03f1c9fa160c56b97423fb = $(`<div id="html_5ace063afb03f1c9fa160c56b97423fb" style="width: 100.0%; height: 100.0%;">機構名稱: 高雄市楠梓區大昌社區發展協會<br>地址: 高雄市楠梓區大昌里右昌街123號</div>`)[0];
+                popup_48264abda0703c25fe6e870d82d3e4f4.setContent(html_5ace063afb03f1c9fa160c56b97423fb);
+            
+        
+
+        marker_6a518c7614b7318aa0d4dbab11e10d66.bindPopup(popup_48264abda0703c25fe6e870d82d3e4f4)
+        ;
+
+        
+    
+    
+            var marker_de48911c0b6977f193f75d2b98903398 = L.marker(
+                [22.7101764679, 120.290184021],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_fd57c56bfa93890f82bc46c36f66ccb6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f6631c7482e7628dcf3502a6e002629a = $(`<div id="html_f6631c7482e7628dcf3502a6e002629a" style="width: 100.0%; height: 100.0%;">機構名稱: 高雄市楠梓區大昌社區發展協會<br>地址: 高雄市楠梓區大昌里右昌街123號</div>`)[0];
+                popup_fd57c56bfa93890f82bc46c36f66ccb6.setContent(html_f6631c7482e7628dcf3502a6e002629a);
+            
+        
+
+        marker_de48911c0b6977f193f75d2b98903398.bindPopup(popup_fd57c56bfa93890f82bc46c36f66ccb6)
+        ;
+
+        
+    
+    
+            var marker_2b5427062a5b05ff8db355b28a879ec5 = L.marker(
+                [24.9904689789, 121.2786941528],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_1088e8159f22a8d14825ce3f0e9fa413 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6e09a2df7ed76e96753e055907b612db = $(`<div id="html_6e09a2df7ed76e96753e055907b612db" style="width: 100.0%; height: 100.0%;">機構名稱: 桃園市桃園區衛生所<br>地址: 桃園市桃園區國豐三街123號4樓</div>`)[0];
+                popup_1088e8159f22a8d14825ce3f0e9fa413.setContent(html_6e09a2df7ed76e96753e055907b612db);
+            
+        
+
+        marker_2b5427062a5b05ff8db355b28a879ec5.bindPopup(popup_1088e8159f22a8d14825ce3f0e9fa413)
+        ;
+
+        
+    
+    
+            var marker_4ef19f23bc6107980f071c6d0758c094 = L.marker(
+                [24.6138362885, 120.7911376953],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_f50732ab942ecc5c3d65d65e6d5df18c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_19e9d2d78b76df70631c7e307fa3b95d = $(`<div id="html_19e9d2d78b76df70631c7e307fa3b95d" style="width: 100.0%; height: 100.0%;">機構名稱: 後龍診所<br>地址: 苗栗縣後龍鎮大庄里中山路123號</div>`)[0];
+                popup_f50732ab942ecc5c3d65d65e6d5df18c.setContent(html_19e9d2d78b76df70631c7e307fa3b95d);
+            
+        
+
+        marker_4ef19f23bc6107980f071c6d0758c094.bindPopup(popup_f50732ab942ecc5c3d65d65e6d5df18c)
+        ;
+
+        
+    
+    
+            var marker_2b27a4c328a5c6547f252b1187188d6a = L.marker(
+                [24.6138362885, 120.7911376953],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_027137ba4b41624c818729a1241b6e09 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8ff93ba84e468b583d29c390388f01e9 = $(`<div id="html_8ff93ba84e468b583d29c390388f01e9" style="width: 100.0%; height: 100.0%;">機構名稱: 後龍診所<br>地址: 苗栗縣後龍鎮大庄里中山路123號</div>`)[0];
+                popup_027137ba4b41624c818729a1241b6e09.setContent(html_8ff93ba84e468b583d29c390388f01e9);
+            
+        
+
+        marker_2b27a4c328a5c6547f252b1187188d6a.bindPopup(popup_027137ba4b41624c818729a1241b6e09)
+        ;
+
+        
+    
+    
+            var marker_76aeb119bf4c5d42379e53363ab8cbbd = L.marker(
+                [24.6138362885, 120.7911376953],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_99ebddeb18ee8f5bacc1721517d9ed42 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8197d6e56ff6678c84263feb4464d6ea = $(`<div id="html_8197d6e56ff6678c84263feb4464d6ea" style="width: 100.0%; height: 100.0%;">機構名稱: 後龍診所<br>地址: 苗栗縣後龍鎮大庄里中山路123號</div>`)[0];
+                popup_99ebddeb18ee8f5bacc1721517d9ed42.setContent(html_8197d6e56ff6678c84263feb4464d6ea);
+            
+        
+
+        marker_76aeb119bf4c5d42379e53363ab8cbbd.bindPopup(popup_99ebddeb18ee8f5bacc1721517d9ed42)
+        ;
+
+        
+    
+    
+            var marker_a7fc206c71742ede7d2a5872f261f466 = L.marker(
+                [24.9823169708, 121.3120040894],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_6d346c1d053ce0fd7817b5e7bc6f81d7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b5bd9a7030144b13dd95e7eecf487a24 = $(`<div id="html_b5bd9a7030144b13dd95e7eecf487a24" style="width: 100.0%; height: 100.0%;">機構名稱: 沙爾德聖保祿修女會醫療財團法人附設聖保祿居家護理所<br>地址: 桃園市桃園區建新街123號</div>`)[0];
+                popup_6d346c1d053ce0fd7817b5e7bc6f81d7.setContent(html_b5bd9a7030144b13dd95e7eecf487a24);
+            
+        
+
+        marker_a7fc206c71742ede7d2a5872f261f466.bindPopup(popup_6d346c1d053ce0fd7817b5e7bc6f81d7)
+        ;
+
+        
+    
+    
+            var marker_f0ff7871b916bcc2f0b2411884332b7f = L.marker(
+                [24.9702148438, 121.2897415161],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_f70666523427328d2651b91c9b98a08a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c59227f7b4e177a1ab4f2c3d24a771dd = $(`<div id="html_c59227f7b4e177a1ab4f2c3d24a771dd" style="width: 100.0%; height: 100.0%;">機構名稱: 財團法人桃園市護國宮愛心基金會<br>地址: 桃園市桃園區中德里國際路1段401巷123號</div>`)[0];
+                popup_f70666523427328d2651b91c9b98a08a.setContent(html_c59227f7b4e177a1ab4f2c3d24a771dd);
+            
+        
+
+        marker_f0ff7871b916bcc2f0b2411884332b7f.bindPopup(popup_f70666523427328d2651b91c9b98a08a)
+        ;
+
+        
+    
+    
+            var marker_c5cdbb157b5d3f3c2d81ed139c622dc8 = L.marker(
+                [23.0846614838, 120.212272644],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_32593ba4ec6660d2335c7c0af656f648 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f7352aca6d8bcfdee070084491ee12a6 = $(`<div id="html_f7352aca6d8bcfdee070084491ee12a6" style="width: 100.0%; height: 100.0%;">機構名稱: 臺南市安定區新吉社區發展協會<br>地址: 臺南市安定區新吉里123-13號</div>`)[0];
+                popup_32593ba4ec6660d2335c7c0af656f648.setContent(html_f7352aca6d8bcfdee070084491ee12a6);
+            
+        
+
+        marker_c5cdbb157b5d3f3c2d81ed139c622dc8.bindPopup(popup_32593ba4ec6660d2335c7c0af656f648)
+        ;
+
+        
+    
+    
+            var marker_8b7c79465b21747df73026ba1f06152f = L.marker(
+                [23.5901432037, 120.3072280884],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_82ffd52f3447fda28ee3e2596da3aeb7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9bae70d690411b0c1c858828c03d1b07 = $(`<div id="html_9bae70d690411b0c1c858828c03d1b07" style="width: 100.0%; height: 100.0%;">機構名稱: 中國醫藥大學北港附設醫院<br>地址: 雲林縣北港鎮新街里新德路123號</div>`)[0];
+                popup_82ffd52f3447fda28ee3e2596da3aeb7.setContent(html_9bae70d690411b0c1c858828c03d1b07);
+            
+        
+
+        marker_8b7c79465b21747df73026ba1f06152f.bindPopup(popup_82ffd52f3447fda28ee3e2596da3aeb7)
+        ;
+
+        
+    
+    
+            var marker_f8868bcd3f00a2aca3cbc8a1f0358a3f = L.marker(
+                [23.5901432037, 120.3072280884],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_1289158777b2d712190ff072a5b16d69 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1cdc0d3c0b2434d1ae4b90a416c9f2eb = $(`<div id="html_1cdc0d3c0b2434d1ae4b90a416c9f2eb" style="width: 100.0%; height: 100.0%;">機構名稱: 中國醫藥大學北港附設醫院附設居家護理所<br>地址: 雲林縣北港鎮新街里新德路123號</div>`)[0];
+                popup_1289158777b2d712190ff072a5b16d69.setContent(html_1cdc0d3c0b2434d1ae4b90a416c9f2eb);
+            
+        
+
+        marker_f8868bcd3f00a2aca3cbc8a1f0358a3f.bindPopup(popup_1289158777b2d712190ff072a5b16d69)
+        ;
+
+        
+    
+    
+            var marker_a4081deb822c96a2d74aa13571347a89 = L.marker(
+                [23.5901432037, 120.3072280884],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_135826ae5f73f818f90fb4dadf654b28 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ab6eb08e847cc3d35603be7859ae880d = $(`<div id="html_ab6eb08e847cc3d35603be7859ae880d" style="width: 100.0%; height: 100.0%;">機構名稱: 中國醫藥大學北港附設醫院附設居家護理所<br>地址: 雲林縣北港鎮新街里新德路123號</div>`)[0];
+                popup_135826ae5f73f818f90fb4dadf654b28.setContent(html_ab6eb08e847cc3d35603be7859ae880d);
+            
+        
+
+        marker_a4081deb822c96a2d74aa13571347a89.bindPopup(popup_135826ae5f73f818f90fb4dadf654b28)
+        ;
+
+        
+    
+    
+            var marker_7acdf116a0c43e285ea78c652dc82f88 = L.marker(
+                [23.4679794312, 120.4322891235],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_5e4e23fcc20d6566fc648a0c614dfb3b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ac7d646b75210b54f2f2dfb49a606876 = $(`<div id="html_ac7d646b75210b54f2f2dfb49a606876" style="width: 100.0%; height: 100.0%;">機構名稱: 財團法人伊甸社會福利基金會附設嘉義市私立嘉義居家式長期照顧服務機構<br>地址: 嘉義市西區車店里貴州街123號</div>`)[0];
+                popup_5e4e23fcc20d6566fc648a0c614dfb3b.setContent(html_ac7d646b75210b54f2f2dfb49a606876);
+            
+        
+
+        marker_7acdf116a0c43e285ea78c652dc82f88.bindPopup(popup_5e4e23fcc20d6566fc648a0c614dfb3b)
+        ;
+
+        
+    
+    
+            var marker_99b9c1a5c7c4c6e0a2ca39ef168bb514 = L.marker(
+                [23.4679794312, 120.4322891235],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_200f28d13bd7d0572aea7a1c24f4c409 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cc15bc37b40b0ea9f18b5c7ffb005335 = $(`<div id="html_cc15bc37b40b0ea9f18b5c7ffb005335" style="width: 100.0%; height: 100.0%;">機構名稱: 財團法人伊甸社會福利基金會附設嘉義市私立嘉義居家式長期照顧服務機構<br>地址: 嘉義市西區車店里貴州街123號</div>`)[0];
+                popup_200f28d13bd7d0572aea7a1c24f4c409.setContent(html_cc15bc37b40b0ea9f18b5c7ffb005335);
+            
+        
+
+        marker_99b9c1a5c7c4c6e0a2ca39ef168bb514.bindPopup(popup_200f28d13bd7d0572aea7a1c24f4c409)
+        ;
+
+        
+    
+    
+            var marker_2aaf40f3dc9eee5261d53a7843bd6191 = L.marker(
+                [23.4679794312, 120.4322891235],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_51d3d8ceb5142a37d7acf3e9d532abcf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e741e6a1b9179b648dc9498873ffb7ac = $(`<div id="html_e741e6a1b9179b648dc9498873ffb7ac" style="width: 100.0%; height: 100.0%;">機構名稱: 財團法人伊甸社會福利基金會附設嘉義市私立嘉義居家式長期照顧服務機構<br>地址: 嘉義市西區車店里貴州街123號</div>`)[0];
+                popup_51d3d8ceb5142a37d7acf3e9d532abcf.setContent(html_e741e6a1b9179b648dc9498873ffb7ac);
+            
+        
+
+        marker_2aaf40f3dc9eee5261d53a7843bd6191.bindPopup(popup_51d3d8ceb5142a37d7acf3e9d532abcf)
+        ;
+
+        
+    
+    
+            var marker_f2bf5d2136be92d10d68ef532f55bcc7 = L.marker(
+                [25.0491962433, 121.460067749],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_7853a89e94fdc61c027e0f32547565c5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_169f242bf55014dad7d31d6c9614b92a = $(`<div id="html_169f242bf55014dad7d31d6c9614b92a" style="width: 100.0%; height: 100.0%;">機構名稱: 新北市私立家安老人長期照顧中心(養護型)<br>地址: 新北市新莊區思源路117號(2層)、119號、119號2樓、121號2樓、123號2樓</div>`)[0];
+                popup_7853a89e94fdc61c027e0f32547565c5.setContent(html_169f242bf55014dad7d31d6c9614b92a);
+            
+        
+
+        marker_f2bf5d2136be92d10d68ef532f55bcc7.bindPopup(popup_7853a89e94fdc61c027e0f32547565c5)
+        ;
+
+        
+    
+    
+            var marker_577f0258b1dbe459bcd54bccb2bc7bf7 = L.marker(
+                [23.5598526001, 119.6031188965],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_79dce74899d1576f2edf7cc4e8107f1e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4cb9d0c51a2ebcced71e68903a755bde = $(`<div id="html_4cb9d0c51a2ebcced71e68903a755bde" style="width: 100.0%; height: 100.0%;">機構名稱: 衛生福利部澎湖老人之家<br>地址: 澎湖縣馬公市光華里123號</div>`)[0];
+                popup_79dce74899d1576f2edf7cc4e8107f1e.setContent(html_4cb9d0c51a2ebcced71e68903a755bde);
+            
+        
+
+        marker_577f0258b1dbe459bcd54bccb2bc7bf7.bindPopup(popup_79dce74899d1576f2edf7cc4e8107f1e)
+        ;
+
+        
+    
+    
+            var marker_54aeebf510496e181f3239a1a04dea43 = L.marker(
+                [23.5598526001, 119.6031188965],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_8661cf340963148c5944f0fe9ad14298 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bb85c0a14ad6afdd0b3140222a51aaf8 = $(`<div id="html_bb85c0a14ad6afdd0b3140222a51aaf8" style="width: 100.0%; height: 100.0%;">機構名稱: 衛生福利部澎湖老人之家<br>地址: 澎湖縣馬公市光華里123號</div>`)[0];
+                popup_8661cf340963148c5944f0fe9ad14298.setContent(html_bb85c0a14ad6afdd0b3140222a51aaf8);
+            
+        
+
+        marker_54aeebf510496e181f3239a1a04dea43.bindPopup(popup_8661cf340963148c5944f0fe9ad14298)
+        ;
+
+        
+    
+    
+            var marker_049e86b06ed76ae22b43cfcf9874213a = L.marker(
+                [25.1360301971, 121.7792739868],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_f80b28b4f73c7c58803340eaaf898cff = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_382c31535e23f918f0e182bad9efba71 = $(`<div id="html_382c31535e23f918f0e182bad9efba71" style="width: 100.0%; height: 100.0%;">機構名稱: 基隆市私立春暉老人長期照顧中心(養護型)<br>地址: 基隆市信義區孝忠里21鄰深美街123號1至4樓</div>`)[0];
+                popup_f80b28b4f73c7c58803340eaaf898cff.setContent(html_382c31535e23f918f0e182bad9efba71);
+            
+        
+
+        marker_049e86b06ed76ae22b43cfcf9874213a.bindPopup(popup_f80b28b4f73c7c58803340eaaf898cff)
+        ;
+
+        
+    
+    
+            var marker_9ea6321da0c3d99f4d694cfaba38d787 = L.marker(
+                [23.5598526001, 119.6031188965],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_1fd79889f49db8d5ac1b6ae472cc6cba = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d25a0377ccb55f7425edcc07840f7b6e = $(`<div id="html_d25a0377ccb55f7425edcc07840f7b6e" style="width: 100.0%; height: 100.0%;">機構名稱: 衛生福利部澎湖老人之家<br>地址: 澎湖縣馬公市光華里123號</div>`)[0];
+                popup_1fd79889f49db8d5ac1b6ae472cc6cba.setContent(html_d25a0377ccb55f7425edcc07840f7b6e);
+            
+        
+
+        marker_9ea6321da0c3d99f4d694cfaba38d787.bindPopup(popup_1fd79889f49db8d5ac1b6ae472cc6cba)
+        ;
+
+        
+    
+    
+            var marker_e093843b24531e7136c9ca84f4ba5258 = L.marker(
+                [25.1360301971, 121.7792739868],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_80983650f9025c6a9cac25132118ea4c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a9655e246dc785fffd4cfcddc49c6d70 = $(`<div id="html_a9655e246dc785fffd4cfcddc49c6d70" style="width: 100.0%; height: 100.0%;">機構名稱: 基隆市私立春暉老人長期照顧中心(養護型)<br>地址: 基隆市信義區孝忠里21鄰深美街123號1至4樓</div>`)[0];
+                popup_80983650f9025c6a9cac25132118ea4c.setContent(html_a9655e246dc785fffd4cfcddc49c6d70);
+            
+        
+
+        marker_e093843b24531e7136c9ca84f4ba5258.bindPopup(popup_80983650f9025c6a9cac25132118ea4c)
+        ;
+
+        
+    
+    
+            var marker_6b8d0c7fe669db5deae6fa7b7c77f167 = L.marker(
+                [25.0541591644, 121.5675964355],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_89bdf50b89f087542647f1674439eff7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_92485fdc9a4dc1f3dea50deb561a76c6 = $(`<div id="html_92485fdc9a4dc1f3dea50deb561a76c6" style="width: 100.0%; height: 100.0%;">機構名稱: 財團法人中華基督教衛理公會恩友堂<br>地址: 臺北市松山區安平里寶清街123號</div>`)[0];
+                popup_89bdf50b89f087542647f1674439eff7.setContent(html_92485fdc9a4dc1f3dea50deb561a76c6);
+            
+        
+
+        marker_6b8d0c7fe669db5deae6fa7b7c77f167.bindPopup(popup_89bdf50b89f087542647f1674439eff7)
+        ;
+
+        
+    
+    
+            var marker_ec275b7c61f17b6717cdad695184882a = L.marker(
+                [24.9902114868, 121.278678894],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_9bcfbaf6ff53b9eac625e205c50267b8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_370d32e078a9959a0a0abc62b9b68a25 = $(`<div id="html_370d32e078a9959a0a0abc62b9b68a25" style="width: 100.0%; height: 100.0%;">機構名稱: 桃園市桃園區衛生所附設居家護理所<br>地址: 桃園市桃園區國豐三街123號4樓</div>`)[0];
+                popup_9bcfbaf6ff53b9eac625e205c50267b8.setContent(html_370d32e078a9959a0a0abc62b9b68a25);
+            
+        
+
+        marker_ec275b7c61f17b6717cdad695184882a.bindPopup(popup_9bcfbaf6ff53b9eac625e205c50267b8)
+        ;
+
+        
+    
+    
+            var marker_643a0c6fb6a82d56c4df15137b8aeeae = L.marker(
+                [24.613779068, 120.7911224365],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_2382fa6201e1b3f81d3d1d1d9c991345 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ce7c84f53a92d0ded5a6b736d48d25e4 = $(`<div id="html_ce7c84f53a92d0ded5a6b736d48d25e4" style="width: 100.0%; height: 100.0%;">機構名稱: 財團法人苗栗縣私立大千社會福利慈善事業基金會(後龍A)<br>地址: 苗栗縣後龍鎮中山路123號</div>`)[0];
+                popup_2382fa6201e1b3f81d3d1d1d9c991345.setContent(html_ce7c84f53a92d0ded5a6b736d48d25e4);
+            
+        
+
+        marker_643a0c6fb6a82d56c4df15137b8aeeae.bindPopup(popup_2382fa6201e1b3f81d3d1d1d9c991345)
+        ;
+
+        
+    
+    
+            var marker_0e158ac6cbd459f05af524250a74f23a = L.marker(
+                [24.613779068, 120.7911224365],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_02db1a4a3bcd27a2dc32021463c7304d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6671fa82b0b517eea71e159ae0c92103 = $(`<div id="html_6671fa82b0b517eea71e159ae0c92103" style="width: 100.0%; height: 100.0%;">機構名稱: 財團法人苗栗縣私立大千社會福利慈善事業基金會(後龍A)<br>地址: 苗栗縣後龍鎮中山路123號</div>`)[0];
+                popup_02db1a4a3bcd27a2dc32021463c7304d.setContent(html_6671fa82b0b517eea71e159ae0c92103);
+            
+        
+
+        marker_0e158ac6cbd459f05af524250a74f23a.bindPopup(popup_02db1a4a3bcd27a2dc32021463c7304d)
+        ;
+
+        
+    
+    
+            var marker_e8dcc5843d6b2308dda84e4b7891a06e = L.marker(
+                [26.3670063019, 120.4904403687],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_690cb932c2c2f7cc6abc604dff185b2e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d3e945fa638e3eaa1400f5af5102f240 = $(`<div id="html_d3e945fa638e3eaa1400f5af5102f240" style="width: 100.0%; height: 100.0%;">機構名稱: 連江縣東引鄉衛生所<br>地址: 連江縣東引鄉中柳村123號</div>`)[0];
+                popup_690cb932c2c2f7cc6abc604dff185b2e.setContent(html_d3e945fa638e3eaa1400f5af5102f240);
+            
+        
+
+        marker_e8dcc5843d6b2308dda84e4b7891a06e.bindPopup(popup_690cb932c2c2f7cc6abc604dff185b2e)
+        ;
+
+        
+    
+    
+            var marker_5f625d76ffdadea61569554c03939b76 = L.marker(
+                [26.3670063019, 120.4904403687],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_7f55c1ce80d8f6f1dbe230e6b06c0676 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4697d5484227428ebcce7d51f9bad55c = $(`<div id="html_4697d5484227428ebcce7d51f9bad55c" style="width: 100.0%; height: 100.0%;">機構名稱: 連江縣東引鄉衛生所<br>地址: 連江縣東引鄉中柳村123號</div>`)[0];
+                popup_7f55c1ce80d8f6f1dbe230e6b06c0676.setContent(html_4697d5484227428ebcce7d51f9bad55c);
+            
+        
+
+        marker_5f625d76ffdadea61569554c03939b76.bindPopup(popup_7f55c1ce80d8f6f1dbe230e6b06c0676)
+        ;
+
+        
+    
+    
+            var marker_7c333f6aabd490ddc72cd4c14156cd0e = L.marker(
+                [24.9302330017, 121.2991027832],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_aa15dbeb07d9ab76af57a40df4fa200e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_40e677b1bb0adf86210693226a1f6352 = $(`<div id="html_40e677b1bb0adf86210693226a1f6352" style="width: 100.0%; height: 100.0%;">機構名稱: 桃園市八德區瑞祥里辦公處<br>地址: 桃園市八德區瑞祥里介壽路二段1233巷46-1號</div>`)[0];
+                popup_aa15dbeb07d9ab76af57a40df4fa200e.setContent(html_40e677b1bb0adf86210693226a1f6352);
+            
+        
+
+        marker_7c333f6aabd490ddc72cd4c14156cd0e.bindPopup(popup_aa15dbeb07d9ab76af57a40df4fa200e)
+        ;
+
+        
+    
+    
+            var marker_45e6e8982ccacb1be0c95fd238d5dd37 = L.marker(
+                [26.3670063019, 120.4904403687],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_45c9dfb96ae529a0952cd8cf89e2b253 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_91c3a9fd7abc3f5255a40d463fcbdec6 = $(`<div id="html_91c3a9fd7abc3f5255a40d463fcbdec6" style="width: 100.0%; height: 100.0%;">機構名稱: 連江縣東引鄉衛生所<br>地址: 連江縣東引鄉中柳村123號</div>`)[0];
+                popup_45c9dfb96ae529a0952cd8cf89e2b253.setContent(html_91c3a9fd7abc3f5255a40d463fcbdec6);
+            
+        
+
+        marker_45e6e8982ccacb1be0c95fd238d5dd37.bindPopup(popup_45c9dfb96ae529a0952cd8cf89e2b253)
+        ;
+
+        
+    
+    
+            var marker_94d68a124db3ad41ad5bb5915394d19f = L.marker(
+                [26.3670063019, 120.4904403687],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_8191deb32960a0e482b7233cfc9ff369 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7448bf9a624a2f6462db4571e59e9756 = $(`<div id="html_7448bf9a624a2f6462db4571e59e9756" style="width: 100.0%; height: 100.0%;">機構名稱: 連江縣東引鄉衛生所<br>地址: 連江縣東引鄉中柳村123號</div>`)[0];
+                popup_8191deb32960a0e482b7233cfc9ff369.setContent(html_7448bf9a624a2f6462db4571e59e9756);
+            
+        
+
+        marker_94d68a124db3ad41ad5bb5915394d19f.bindPopup(popup_8191deb32960a0e482b7233cfc9ff369)
+        ;
+
+        
+    
+    
+            var marker_dbebaf9f0e05dceab5773f1b217ea1b6 = L.marker(
+                [22.7932815552, 120.2847442627],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_1b29bfb755bab47a461c861edd663451 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_48b9171d27352fa648aa6c6bb5c8e8ce = $(`<div id="html_48b9171d27352fa648aa6c6bb5c8e8ce" style="width: 100.0%; height: 100.0%;">機構名稱: 翁仁茂診所<br>地址: 高雄市岡山區公園西路三段123號</div>`)[0];
+                popup_1b29bfb755bab47a461c861edd663451.setContent(html_48b9171d27352fa648aa6c6bb5c8e8ce);
+            
+        
+
+        marker_dbebaf9f0e05dceab5773f1b217ea1b6.bindPopup(popup_1b29bfb755bab47a461c861edd663451)
+        ;
+
+        
+    
+    
+            var marker_705829d06b5a7b6bc85bd1a17b6ba34d = L.marker(
+                [25.0487098694, 121.5617523193],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_125ffd9845d1d3ae73487f8f5e7d83d7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cb48c666c2848ed89909c66528d438d1 = $(`<div id="html_cb48c666c2848ed89909c66528d438d1" style="width: 100.0%; height: 100.0%;">機構名稱: 喜樂園長照股份有限公司附設臺北市私立喜樂園居家長照機構<br>地址: 臺北市松山區吉祥里八德路4段123號2樓之4</div>`)[0];
+                popup_125ffd9845d1d3ae73487f8f5e7d83d7.setContent(html_cb48c666c2848ed89909c66528d438d1);
+            
+        
+
+        marker_705829d06b5a7b6bc85bd1a17b6ba34d.bindPopup(popup_125ffd9845d1d3ae73487f8f5e7d83d7)
+        ;
+
+        
+    
+    
+            var marker_90b702d4c6a625fac2a76fe0784371e1 = L.marker(
+                [25.0487098694, 121.5617523193],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_3a26b6ffcbbea6678bca5d61605184f4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3667e95e9f08fd8bb3946b39a40b247f = $(`<div id="html_3667e95e9f08fd8bb3946b39a40b247f" style="width: 100.0%; height: 100.0%;">機構名稱: 喜樂園長照股份有限公司附設臺北市私立喜樂園居家長照機構<br>地址: 臺北市松山區吉祥里八德路4段123號2樓之4</div>`)[0];
+                popup_3a26b6ffcbbea6678bca5d61605184f4.setContent(html_3667e95e9f08fd8bb3946b39a40b247f);
+            
+        
+
+        marker_90b702d4c6a625fac2a76fe0784371e1.bindPopup(popup_3a26b6ffcbbea6678bca5d61605184f4)
+        ;
+
+        
+    
+    
+            var marker_8d7f7c05888a59fed1e3545812f329d1 = L.marker(
+                [25.0487098694, 121.5617523193],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_978d7f9c7550997c3411e36fbacd8294 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aa588047d474e23851e81b56980393d2 = $(`<div id="html_aa588047d474e23851e81b56980393d2" style="width: 100.0%; height: 100.0%;">機構名稱: 喜樂園長照股份有限公司附設臺北市私立喜樂園居家長照機構<br>地址: 臺北市松山區吉祥里八德路4段123號2樓之4</div>`)[0];
+                popup_978d7f9c7550997c3411e36fbacd8294.setContent(html_aa588047d474e23851e81b56980393d2);
+            
+        
+
+        marker_8d7f7c05888a59fed1e3545812f329d1.bindPopup(popup_978d7f9c7550997c3411e36fbacd8294)
+        ;
+
+        
+    
+    
+            var marker_6e9834ce13c141990f4c1ca8b27942a9 = L.marker(
+                [25.0487098694, 121.5617523193],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_5a4b4773bf194cb595464cb96247636e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_51a5c4567204e1432e5a409194f5dc06 = $(`<div id="html_51a5c4567204e1432e5a409194f5dc06" style="width: 100.0%; height: 100.0%;">機構名稱: 喜樂園長照股份有限公司附設臺北市私立喜樂園居家長照機構<br>地址: 臺北市松山區吉祥里八德路4段123號2樓之4</div>`)[0];
+                popup_5a4b4773bf194cb595464cb96247636e.setContent(html_51a5c4567204e1432e5a409194f5dc06);
+            
+        
+
+        marker_6e9834ce13c141990f4c1ca8b27942a9.bindPopup(popup_5a4b4773bf194cb595464cb96247636e)
+        ;
+
+        
+    
+    
+            var marker_ed0d18c087190620b01f708f8961259c = L.marker(
+                [25.0487098694, 121.5617523193],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_16559345897c0d7c9a3894585d264c2e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ed9d289944a653ca016994b71a80f6d0 = $(`<div id="html_ed9d289944a653ca016994b71a80f6d0" style="width: 100.0%; height: 100.0%;">機構名稱: 喜樂園長照股份有限公司附設臺北市私立喜樂園居家長照機構<br>地址: 臺北市松山區吉祥里八德路4段123號2樓之4</div>`)[0];
+                popup_16559345897c0d7c9a3894585d264c2e.setContent(html_ed9d289944a653ca016994b71a80f6d0);
+            
+        
+
+        marker_ed0d18c087190620b01f708f8961259c.bindPopup(popup_16559345897c0d7c9a3894585d264c2e)
+        ;
+
+        
+    
+    
+            var marker_6fc72120ddd2b7943213fd7faf984c62 = L.marker(
+                [25.0487098694, 121.5617523193],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_dc13883d36cbe762669494559b31f2a0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b94b927e5fa21511ea30212da71047e6 = $(`<div id="html_b94b927e5fa21511ea30212da71047e6" style="width: 100.0%; height: 100.0%;">機構名稱: 喜樂園長照股份有限公司附設臺北市私立喜樂園居家長照機構<br>地址: 臺北市松山區吉祥里八德路4段123號2樓之4</div>`)[0];
+                popup_dc13883d36cbe762669494559b31f2a0.setContent(html_b94b927e5fa21511ea30212da71047e6);
+            
+        
+
+        marker_6fc72120ddd2b7943213fd7faf984c62.bindPopup(popup_dc13883d36cbe762669494559b31f2a0)
+        ;
+
+        
+    
+    
+            var marker_040e49f8b9be52e987bf8c58a10e03c4 = L.marker(
+                [25.0487098694, 121.5617523193],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_b2d1eb4fc358e8c9ec8523f9610ed25d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b1f1acf512fb2e9fb21c1fee7b2fcfd8 = $(`<div id="html_b1f1acf512fb2e9fb21c1fee7b2fcfd8" style="width: 100.0%; height: 100.0%;">機構名稱: 喜樂園長照股份有限公司附設臺北市私立喜樂園居家長照機構<br>地址: 臺北市松山區吉祥里八德路4段123號2樓之4</div>`)[0];
+                popup_b2d1eb4fc358e8c9ec8523f9610ed25d.setContent(html_b1f1acf512fb2e9fb21c1fee7b2fcfd8);
+            
+        
+
+        marker_040e49f8b9be52e987bf8c58a10e03c4.bindPopup(popup_b2d1eb4fc358e8c9ec8523f9610ed25d)
+        ;
+
+        
+    
+    
+            var marker_bb94488460dd2878685d9cab52442164 = L.marker(
+                [25.0487098694, 121.5617523193],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_1772a5fca06fb00c956f763ccfc18218 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_762283d5ddd4e3fe428f208dbc806454 = $(`<div id="html_762283d5ddd4e3fe428f208dbc806454" style="width: 100.0%; height: 100.0%;">機構名稱: 喜樂園長照股份有限公司附設臺北市私立喜樂園居家長照機構<br>地址: 臺北市松山區吉祥里八德路4段123號2樓之4</div>`)[0];
+                popup_1772a5fca06fb00c956f763ccfc18218.setContent(html_762283d5ddd4e3fe428f208dbc806454);
+            
+        
+
+        marker_bb94488460dd2878685d9cab52442164.bindPopup(popup_1772a5fca06fb00c956f763ccfc18218)
+        ;
+
+        
+    
+    
+            var marker_9a76b434f17d062e7ddcac639291c438 = L.marker(
+                [22.174282074, 120.8353118896],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_db104bd620e6ac3e418358d1c5d9cd81 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1b737cf146bc4056874efa57adc3ef78 = $(`<div id="html_1b737cf146bc4056874efa57adc3ef78" style="width: 100.0%; height: 100.0%;">機構名稱: 屏東縣私立娜孥牡丹社區長照機構<br>地址: 屏東縣牡丹鄉牡丹村6鄰123號1樓</div>`)[0];
+                popup_db104bd620e6ac3e418358d1c5d9cd81.setContent(html_1b737cf146bc4056874efa57adc3ef78);
+            
+        
+
+        marker_9a76b434f17d062e7ddcac639291c438.bindPopup(popup_db104bd620e6ac3e418358d1c5d9cd81)
+        ;
+
+        
+    
+    
+            var marker_dbb3244d3286b1189e399982264aa29a = L.marker(
+                [22.174282074, 120.8353118896],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_175b1e9151987bc7de8092b521dae607 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c48d908ad70d7810d20fbe685d9c4586 = $(`<div id="html_c48d908ad70d7810d20fbe685d9c4586" style="width: 100.0%; height: 100.0%;">機構名稱: 屏東縣私立娜孥牡丹社區長照機構<br>地址: 屏東縣牡丹鄉牡丹村6鄰123號1樓</div>`)[0];
+                popup_175b1e9151987bc7de8092b521dae607.setContent(html_c48d908ad70d7810d20fbe685d9c4586);
+            
+        
+
+        marker_dbb3244d3286b1189e399982264aa29a.bindPopup(popup_175b1e9151987bc7de8092b521dae607)
+        ;
+
+        
+    
+    
+            var marker_2a9a5625fb46c7008a7a3b7b20fa4fea = L.marker(
+                [24.9821147919, 121.3125076294],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_e9cf2441175019599b3a60c9ab9ef2e4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8e308371564e642927ed61351c050ad7 = $(`<div id="html_8e308371564e642927ed61351c050ad7" style="width: 100.0%; height: 100.0%;">機構名稱: 沙爾德聖保祿修女會醫療財團法人聖保祿醫院<br>地址: 桃園市桃園區建新街123號</div>`)[0];
+                popup_e9cf2441175019599b3a60c9ab9ef2e4.setContent(html_8e308371564e642927ed61351c050ad7);
+            
+        
+
+        marker_2a9a5625fb46c7008a7a3b7b20fa4fea.bindPopup(popup_e9cf2441175019599b3a60c9ab9ef2e4)
+        ;
+
+        
+    
+    
+            var marker_e79f0a8ef43459ef37e9582095df9b53 = L.marker(
+                [24.9821147919, 121.3125076294],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_2ad2744c7464cef4592035cbae32a2e6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9f70bec20df76e35e629c355dbf67db9 = $(`<div id="html_9f70bec20df76e35e629c355dbf67db9" style="width: 100.0%; height: 100.0%;">機構名稱: 沙爾德聖保祿修女會醫療財團法人聖保祿醫院<br>地址: 桃園市桃園區建新街123號</div>`)[0];
+                popup_2ad2744c7464cef4592035cbae32a2e6.setContent(html_9f70bec20df76e35e629c355dbf67db9);
+            
+        
+
+        marker_e79f0a8ef43459ef37e9582095df9b53.bindPopup(popup_2ad2744c7464cef4592035cbae32a2e6)
+        ;
+
+        
+    
+    
+            var marker_673d2bb1af85ff28fe05ee7d07b4a719 = L.marker(
+                [24.9821147919, 121.3125076294],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_9b26a474b868f66c7d98bd82a83c718d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1364d6f637433dbfd60731df1ccf39aa = $(`<div id="html_1364d6f637433dbfd60731df1ccf39aa" style="width: 100.0%; height: 100.0%;">機構名稱: 沙爾德聖保祿修女會醫療財團法人聖保祿醫院<br>地址: 桃園市桃園區建新街123號</div>`)[0];
+                popup_9b26a474b868f66c7d98bd82a83c718d.setContent(html_1364d6f637433dbfd60731df1ccf39aa);
+            
+        
+
+        marker_673d2bb1af85ff28fe05ee7d07b4a719.bindPopup(popup_9b26a474b868f66c7d98bd82a83c718d)
+        ;
+
+        
+    
+    
+            var marker_5a4bfcf6e1127947446c476942d66930 = L.marker(
+                [22.6498470306, 120.3560256958],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_f30cdc4a21ddbd1ed648b308c8270787 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_99e40c244c7289dbe231d56c891560cc = $(`<div id="html_99e40c244c7289dbe231d56c891560cc" style="width: 100.0%; height: 100.0%;">機構名稱: 長庚醫療財團法人附設高雄居家護理所<br>地址: 高雄市鳥松區鳥松里大埤路123號</div>`)[0];
+                popup_f30cdc4a21ddbd1ed648b308c8270787.setContent(html_99e40c244c7289dbe231d56c891560cc);
+            
+        
+
+        marker_5a4bfcf6e1127947446c476942d66930.bindPopup(popup_f30cdc4a21ddbd1ed648b308c8270787)
+        ;
+
+        
+    
+    
+            var marker_e8fa1ae49c6a5db372b83764428a4d73 = L.marker(
+                [25.0624084473, 121.4980392456],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_e3f6efa17dd8290e98291d549468e8a0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f946a6b8d4de710b4561b38468db9fab = $(`<div id="html_f946a6b8d4de710b4561b38468db9fab" style="width: 100.0%; height: 100.0%;">機構名稱: 新北市私立友達居家長照機構<br>地址: 新北市三重區中央里正義北路123號2樓之3</div>`)[0];
+                popup_e3f6efa17dd8290e98291d549468e8a0.setContent(html_f946a6b8d4de710b4561b38468db9fab);
+            
+        
+
+        marker_e8fa1ae49c6a5db372b83764428a4d73.bindPopup(popup_e3f6efa17dd8290e98291d549468e8a0)
+        ;
+
+        
+    
+    
+            var marker_46c74e4ddcdc125550aa8d72e0372e52 = L.marker(
+                [25.0624084473, 121.4980392456],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_baccde30d1fb63cf9d7132e55e370477 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3ed152e7701b0a8f536e82694c98cd33 = $(`<div id="html_3ed152e7701b0a8f536e82694c98cd33" style="width: 100.0%; height: 100.0%;">機構名稱: 新北市私立友達居家長照機構<br>地址: 新北市三重區中央里正義北路123號2樓之3</div>`)[0];
+                popup_baccde30d1fb63cf9d7132e55e370477.setContent(html_3ed152e7701b0a8f536e82694c98cd33);
+            
+        
+
+        marker_46c74e4ddcdc125550aa8d72e0372e52.bindPopup(popup_baccde30d1fb63cf9d7132e55e370477)
+        ;
+
+        
+    
+    
+            var marker_f82d11ee59b9596ba57c9440f4d3e2ac = L.marker(
+                [22.6290245056, 120.3325500488],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_169f71eea5a7eb902f03d38f27856832 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_936476768ceab9c6974b164e5513f105 = $(`<div id="html_936476768ceab9c6974b164e5513f105" style="width: 100.0%; height: 100.0%;">機構名稱: 高雄市立凱旋醫院(苓雅區正大里C)<br>地址: 高雄市苓雅區正大里輔仁路123號1樓</div>`)[0];
+                popup_169f71eea5a7eb902f03d38f27856832.setContent(html_936476768ceab9c6974b164e5513f105);
+            
+        
+
+        marker_f82d11ee59b9596ba57c9440f4d3e2ac.bindPopup(popup_169f71eea5a7eb902f03d38f27856832)
+        ;
+
+        
+    
+    
+            var marker_86027e3be5a9217eaa0167b6f41cd2a9 = L.marker(
+                [22.6290245056, 120.3325500488],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_e5e7d39d5c22e33d077911afc5b1e4df = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c8f6868bd6807363adeb892be28577b0 = $(`<div id="html_c8f6868bd6807363adeb892be28577b0" style="width: 100.0%; height: 100.0%;">機構名稱: 高雄市立凱旋醫院(苓雅區正大里C)<br>地址: 高雄市苓雅區正大里輔仁路123號1樓</div>`)[0];
+                popup_e5e7d39d5c22e33d077911afc5b1e4df.setContent(html_c8f6868bd6807363adeb892be28577b0);
+            
+        
+
+        marker_86027e3be5a9217eaa0167b6f41cd2a9.bindPopup(popup_e5e7d39d5c22e33d077911afc5b1e4df)
+        ;
+
+        
+    
+    
+            var marker_379bc804096a74885c75f07fe0d72676 = L.marker(
+                [24.8287754059, 121.0177383423],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_890bf1154a91c87a18683d24c840f228 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bc9882b28d822e1b118bd853ceb3964d = $(`<div id="html_bc9882b28d822e1b118bd853ceb3964d" style="width: 100.0%; height: 100.0%;">機構名稱: 新竹縣福田社會福利協會<br>地址: 新竹縣竹北市興安里縣政一街123號3樓之7號</div>`)[0];
+                popup_890bf1154a91c87a18683d24c840f228.setContent(html_bc9882b28d822e1b118bd853ceb3964d);
+            
+        
+
+        marker_379bc804096a74885c75f07fe0d72676.bindPopup(popup_890bf1154a91c87a18683d24c840f228)
+        ;
+
+        
+    
+    
+            var marker_3ce3997aa52c43c7a581ea718257d430 = L.marker(
+                [24.8287754059, 121.0177383423],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_e81a37e6d7656e9cefd4e9eb9565cebe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8c64ac14f642a94496a375537af1c2ba = $(`<div id="html_8c64ac14f642a94496a375537af1c2ba" style="width: 100.0%; height: 100.0%;">機構名稱: 新竹縣福田社會福利協會<br>地址: 新竹縣竹北市興安里縣政一街123號3樓之7號</div>`)[0];
+                popup_e81a37e6d7656e9cefd4e9eb9565cebe.setContent(html_8c64ac14f642a94496a375537af1c2ba);
+            
+        
+
+        marker_3ce3997aa52c43c7a581ea718257d430.bindPopup(popup_e81a37e6d7656e9cefd4e9eb9565cebe)
+        ;
+
+        
+    
+    
+            var marker_f98f725b14c9ed8264dbe13bd51f9dd7 = L.marker(
+                [24.8287754059, 121.0177383423],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_da9312ad3351279fd4ece1139e5c1177 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_393e610100e5475667d4bd772a792c22 = $(`<div id="html_393e610100e5475667d4bd772a792c22" style="width: 100.0%; height: 100.0%;">機構名稱: 新竹縣福田社會福利協會<br>地址: 新竹縣竹北市興安里縣政一街123號3樓之7號</div>`)[0];
+                popup_da9312ad3351279fd4ece1139e5c1177.setContent(html_393e610100e5475667d4bd772a792c22);
+            
+        
+
+        marker_f98f725b14c9ed8264dbe13bd51f9dd7.bindPopup(popup_da9312ad3351279fd4ece1139e5c1177)
+        ;
+
+        
+    
+    
+            var marker_50c3d53a30eb6fae1d95e8416b76d205 = L.marker(
+                [23.5917625427, 120.3078231812],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_5d21ef92f1cff742ea8e0c03a2400bcb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8f3b9bf84da6f8046ad2720457478d8a = $(`<div id="html_8f3b9bf84da6f8046ad2720457478d8a" style="width: 100.0%; height: 100.0%;">機構名稱: 中國醫藥大學北港附設醫院<br>地址: 雲林縣北港鎮新街里新德路123號</div>`)[0];
+                popup_5d21ef92f1cff742ea8e0c03a2400bcb.setContent(html_8f3b9bf84da6f8046ad2720457478d8a);
+            
+        
+
+        marker_50c3d53a30eb6fae1d95e8416b76d205.bindPopup(popup_5d21ef92f1cff742ea8e0c03a2400bcb)
+        ;
+
+        
+    
+    
+            var marker_b885910658f76c0c71d35ed5a6c722aa = L.marker(
+                [24.1727333069, 120.6534881592],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_08e77207c5371617a22a379c2ab2f680 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9ee4ce90b9bfe9d2f7b4a49260554e80 = $(`<div id="html_9ee4ce90b9bfe9d2f7b4a49260554e80" style="width: 100.0%; height: 100.0%;">機構名稱: 品沐職能治療所(大河里C)<br>地址: 臺中市西屯區大河里甘肅路二段123號</div>`)[0];
+                popup_08e77207c5371617a22a379c2ab2f680.setContent(html_9ee4ce90b9bfe9d2f7b4a49260554e80);
+            
+        
+
+        marker_b885910658f76c0c71d35ed5a6c722aa.bindPopup(popup_08e77207c5371617a22a379c2ab2f680)
+        ;
+
+        
+    
+    
+            var marker_92844129552bdaf5a4fec8d37a8c35ee = L.marker(
+                [23.8143768311, 120.733505249],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_ee84192d8b64ac67bf78e99bc58e122d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_db3d0417b350054e43cca951900a71b8 = $(`<div id="html_db3d0417b350054e43cca951900a71b8" style="width: 100.0%; height: 100.0%;">機構名稱: 社團法人南投縣社區家庭支援協會附設南投縣私立迦南居家式長期照顧服務機構-中央巷弄長照站<br>地址: 南投縣竹山鎮中央里集山路一段1236巷6號</div>`)[0];
+                popup_ee84192d8b64ac67bf78e99bc58e122d.setContent(html_db3d0417b350054e43cca951900a71b8);
+            
+        
+
+        marker_92844129552bdaf5a4fec8d37a8c35ee.bindPopup(popup_ee84192d8b64ac67bf78e99bc58e122d)
+        ;
+
+        
+    
+    
+            var marker_6c3e0df9c3a3066aa22498186995680d = L.marker(
+                [24.1686973572, 120.6823806763],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_0965eb17025e1c87bd58438404b6656b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0fdaf7ff0c0ffa913554176a54eb25e8 = $(`<div id="html_0fdaf7ff0c0ffa913554176a54eb25e8" style="width: 100.0%; height: 100.0%;">機構名稱: 璽安康輔具醫材館<br>地址: 臺中市北屯區平德里青島路三段123號2樓</div>`)[0];
+                popup_0965eb17025e1c87bd58438404b6656b.setContent(html_0fdaf7ff0c0ffa913554176a54eb25e8);
+            
+        
+
+        marker_6c3e0df9c3a3066aa22498186995680d.bindPopup(popup_0965eb17025e1c87bd58438404b6656b)
+        ;
+
+        
+    
+    
+            var marker_6a61888b09a475054795603dafb89283 = L.marker(
+                [24.2516708374, 120.8302764893],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_a40fe3c5a87e1a2d1f91e625b721460c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_48b0f764c184914c67f1d9e8263fd5ff = $(`<div id="html_48b0f764c184914c67f1d9e8263fd5ff" style="width: 100.0%; height: 100.0%;">機構名稱: 居安健康事業有限公司附設私立居安東崎居家長照機構<br>地址: 臺中市東勢區延平里6鄰第一橫街123號1樓</div>`)[0];
+                popup_a40fe3c5a87e1a2d1f91e625b721460c.setContent(html_48b0f764c184914c67f1d9e8263fd5ff);
+            
+        
+
+        marker_6a61888b09a475054795603dafb89283.bindPopup(popup_a40fe3c5a87e1a2d1f91e625b721460c)
+        ;
+
+        
+    
+    
+            var marker_dca8019d59eb4c71955679f1d8e01fe6 = L.marker(
+                [24.2516708374, 120.8302764893],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_332b928b26a16cfefece65423524762e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eb6bfb0119767e2dc4caedabafe93f2b = $(`<div id="html_eb6bfb0119767e2dc4caedabafe93f2b" style="width: 100.0%; height: 100.0%;">機構名稱: 居安健康事業有限公司附設私立居安東崎居家長照機構<br>地址: 臺中市東勢區延平里6鄰第一橫街123號1樓</div>`)[0];
+                popup_332b928b26a16cfefece65423524762e.setContent(html_eb6bfb0119767e2dc4caedabafe93f2b);
+            
+        
+
+        marker_dca8019d59eb4c71955679f1d8e01fe6.bindPopup(popup_332b928b26a16cfefece65423524762e)
+        ;
+
+        
+    
+    
+            var marker_5c0f379a740755ae135a1de3c6d18076 = L.marker(
+                [24.9451599121, 121.2295303345],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_d57b6568b3f71f677fc8e48ffc1bea3f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cedf9031c201831b40733b4cbea9c143 = $(`<div id="html_cedf9031c201831b40733b4cbea9c143" style="width: 100.0%; height: 100.0%;">機構名稱: 黃文昌診所<br>地址: 桃園市中壢區龍岡路二段123號</div>`)[0];
+                popup_d57b6568b3f71f677fc8e48ffc1bea3f.setContent(html_cedf9031c201831b40733b4cbea9c143);
+            
+        
+
+        marker_5c0f379a740755ae135a1de3c6d18076.bindPopup(popup_d57b6568b3f71f677fc8e48ffc1bea3f)
+        ;
+
+        
+    
+    
+            var marker_fb529d3a2939f162453d9d8fac698029 = L.marker(
+                [24.1158809662, 120.6649246216],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_ec401783d4b540015e16971946113484 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1c37b1dd91f4213d33147a13a8ba2981 = $(`<div id="html_1c37b1dd91f4213d33147a13a8ba2981" style="width: 100.0%; height: 100.0%;">機構名稱: 居安居家護理所(A)<br>地址: 臺中市東勢區延平里第一橫街123號2樓</div>`)[0];
+                popup_ec401783d4b540015e16971946113484.setContent(html_1c37b1dd91f4213d33147a13a8ba2981);
+            
+        
+
+        marker_fb529d3a2939f162453d9d8fac698029.bindPopup(popup_ec401783d4b540015e16971946113484)
+        ;
+
+        
+    
+    
+            var marker_4079be8431c69a5de1832826ab0687ef = L.marker(
+                [25.0694465637, 121.5927505493],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_b506eca4fdee2930fd1124ba01d561ee = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8f6ec07b73feac1880f6c55b7a26c765 = $(`<div id="html_8f6ec07b73feac1880f6c55b7a26c765" style="width: 100.0%; height: 100.0%;">機構名稱: 大安健康股份有限公司附設臺北市私立大安居家長照機構<br>地址: 臺北市內湖區寶湖里民權東路6段123巷16號6樓</div>`)[0];
+                popup_b506eca4fdee2930fd1124ba01d561ee.setContent(html_8f6ec07b73feac1880f6c55b7a26c765);
+            
+        
+
+        marker_4079be8431c69a5de1832826ab0687ef.bindPopup(popup_b506eca4fdee2930fd1124ba01d561ee)
+        ;
+
+        
+    
+    
+            var marker_aa9fb1e6c4fec7a7f94dba6c93ae56ab = L.marker(
+                [25.0694465637, 121.5927505493],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_0ad690b4e502d80a483bb7ae4a81013f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8bba4923cf9f34837baff282f1da5f12 = $(`<div id="html_8bba4923cf9f34837baff282f1da5f12" style="width: 100.0%; height: 100.0%;">機構名稱: 大安健康股份有限公司附設臺北市私立大安居家長照機構<br>地址: 臺北市內湖區寶湖里民權東路6段123巷16號6樓</div>`)[0];
+                popup_0ad690b4e502d80a483bb7ae4a81013f.setContent(html_8bba4923cf9f34837baff282f1da5f12);
+            
+        
+
+        marker_aa9fb1e6c4fec7a7f94dba6c93ae56ab.bindPopup(popup_0ad690b4e502d80a483bb7ae4a81013f)
+        ;
+
+        
+    
+    
+            var marker_407f10ca2bba21e9cd28c049cdc3f7a7 = L.marker(
+                [25.0694465637, 121.5927505493],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_61159da7a8ee55f6980e697aa71d3649 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_de691bc69ff2da55758ad06ee193545d = $(`<div id="html_de691bc69ff2da55758ad06ee193545d" style="width: 100.0%; height: 100.0%;">機構名稱: 大安健康股份有限公司附設臺北市私立大安居家長照機構<br>地址: 臺北市內湖區寶湖里民權東路6段123巷16號6樓</div>`)[0];
+                popup_61159da7a8ee55f6980e697aa71d3649.setContent(html_de691bc69ff2da55758ad06ee193545d);
+            
+        
+
+        marker_407f10ca2bba21e9cd28c049cdc3f7a7.bindPopup(popup_61159da7a8ee55f6980e697aa71d3649)
+        ;
+
+        
+    
+    
+            var marker_8549f486b59944295a397f8d4a4971eb = L.marker(
+                [25.0416603088, 121.5525741577],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_e38c8a46d293f302deaaddb0d68dbe61 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0b9d0340ef9a94a4f054f9444369a822 = $(`<div id="html_0b9d0340ef9a94a4f054f9444369a822" style="width: 100.0%; height: 100.0%;">機構名稱: 臺北市私立來服居家長照機構<br>地址: 臺北市大安區忠孝東路四段221號12樓(1230室) </div>`)[0];
+                popup_e38c8a46d293f302deaaddb0d68dbe61.setContent(html_0b9d0340ef9a94a4f054f9444369a822);
+            
+        
+
+        marker_8549f486b59944295a397f8d4a4971eb.bindPopup(popup_e38c8a46d293f302deaaddb0d68dbe61)
+        ;
+
+        
+    
+    
+            var marker_bc5c11b2efa048cfe8e9f2d7c0f1e5b4 = L.marker(
+                [25.0416603088, 121.5525741577],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_8221f377c96b1c964ef3be9b810aa1a2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_32b5cff1050137630fb072bd307159ad = $(`<div id="html_32b5cff1050137630fb072bd307159ad" style="width: 100.0%; height: 100.0%;">機構名稱: 臺北市私立來服居家長照機構<br>地址: 臺北市大安區忠孝東路四段221號12樓(1230室) </div>`)[0];
+                popup_8221f377c96b1c964ef3be9b810aa1a2.setContent(html_32b5cff1050137630fb072bd307159ad);
+            
+        
+
+        marker_bc5c11b2efa048cfe8e9f2d7c0f1e5b4.bindPopup(popup_8221f377c96b1c964ef3be9b810aa1a2)
+        ;
+
+        
+    
+    
+            var marker_be7234a72ba365302842a9be6502cf08 = L.marker(
+                [25.0416603088, 121.5525741577],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_18fd95d169cda1bd56fc84c9d1d72d36 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b4806c9e987e915bb894c256b6657ccb = $(`<div id="html_b4806c9e987e915bb894c256b6657ccb" style="width: 100.0%; height: 100.0%;">機構名稱: 臺北市私立來服居家長照機構<br>地址: 臺北市大安區忠孝東路四段221號12樓(1230室) </div>`)[0];
+                popup_18fd95d169cda1bd56fc84c9d1d72d36.setContent(html_b4806c9e987e915bb894c256b6657ccb);
+            
+        
+
+        marker_be7234a72ba365302842a9be6502cf08.bindPopup(popup_18fd95d169cda1bd56fc84c9d1d72d36)
+        ;
+
+        
+    
+    
+            var marker_3385b7e874a72af46a32832b73e7ecf2 = L.marker(
+                [22.7981090546, 120.2848510742],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_fe00c6f78463105f173250fe6103ec0e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0194db4e64ff9e6747ed046bf238e089 = $(`<div id="html_0194db4e64ff9e6747ed046bf238e089" style="width: 100.0%; height: 100.0%;">機構名稱: 高雄市私立明達居家長照機構<br>地址: 高雄市岡山區公園西路二段96巷123號1樓</div>`)[0];
+                popup_fe00c6f78463105f173250fe6103ec0e.setContent(html_0194db4e64ff9e6747ed046bf238e089);
+            
+        
+
+        marker_3385b7e874a72af46a32832b73e7ecf2.bindPopup(popup_fe00c6f78463105f173250fe6103ec0e)
+        ;
+
+        
+    
+    
+            var marker_14e3b496b0baa35179c7b59c7f57f20b = L.marker(
+                [22.7981090546, 120.2848510742],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_a73c9034972cc099353394ef6da57cc7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4841b1adecf75d244276e850fbeeb36b = $(`<div id="html_4841b1adecf75d244276e850fbeeb36b" style="width: 100.0%; height: 100.0%;">機構名稱: 高雄市私立明達居家長照機構<br>地址: 高雄市岡山區公園西路二段96巷123號1樓</div>`)[0];
+                popup_a73c9034972cc099353394ef6da57cc7.setContent(html_4841b1adecf75d244276e850fbeeb36b);
+            
+        
+
+        marker_14e3b496b0baa35179c7b59c7f57f20b.bindPopup(popup_a73c9034972cc099353394ef6da57cc7)
+        ;
+
+        
+    
+    
+            var marker_f0816ebb789164e9dc7a350d85e1256d = L.marker(
+                [25.1190891266, 121.5064239502],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_55b4841e33d2af04cc0d1302cc5ccb92 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c8f7b30bab2dc5ad3656a50aa5c4ed3f = $(`<div id="html_c8f7b30bab2dc5ad3656a50aa5c4ed3f" style="width: 100.0%; height: 100.0%;">機構名稱: 永欣健康股份有限公司附設臺北市私立金永欣居家長照機構<br>地址: 臺北市北投區立農里吉利街123巷16號1樓</div>`)[0];
+                popup_55b4841e33d2af04cc0d1302cc5ccb92.setContent(html_c8f7b30bab2dc5ad3656a50aa5c4ed3f);
+            
+        
+
+        marker_f0816ebb789164e9dc7a350d85e1256d.bindPopup(popup_55b4841e33d2af04cc0d1302cc5ccb92)
+        ;
+
+        
+    
+    
+            var marker_187b6e9a596d76cf76e3d14e8a1cbed9 = L.marker(
+                [25.1190891266, 121.5064239502],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_4cb1dcf48bd405b6fe7a48beb37e7ff7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_daf638be6df8ead7f6fe4d74eb10ff5a = $(`<div id="html_daf638be6df8ead7f6fe4d74eb10ff5a" style="width: 100.0%; height: 100.0%;">機構名稱: 永欣健康股份有限公司附設臺北市私立金永欣居家長照機構<br>地址: 臺北市北投區立農里吉利街123巷16號1樓</div>`)[0];
+                popup_4cb1dcf48bd405b6fe7a48beb37e7ff7.setContent(html_daf638be6df8ead7f6fe4d74eb10ff5a);
+            
+        
+
+        marker_187b6e9a596d76cf76e3d14e8a1cbed9.bindPopup(popup_4cb1dcf48bd405b6fe7a48beb37e7ff7)
+        ;
+
+        
+    
+    
+            var marker_1c693a742756c87aae1deefceb6452f4 = L.marker(
+                [25.1782474518, 121.6891860962],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_9a3a3ca92c54cc1e2b3be64eb88112aa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_60bc261b6d883af91e27545c2019dda8 = $(`<div id="html_60bc261b6d883af91e27545c2019dda8" style="width: 100.0%; height: 100.0%;">機構名稱: 財團法人天下為公社會福利慈善事業基金會附設新北市私立萬里社區長照機構<br>地址: 新北市萬里區瑪鋉路123號6樓</div>`)[0];
+                popup_9a3a3ca92c54cc1e2b3be64eb88112aa.setContent(html_60bc261b6d883af91e27545c2019dda8);
+            
+        
+
+        marker_1c693a742756c87aae1deefceb6452f4.bindPopup(popup_9a3a3ca92c54cc1e2b3be64eb88112aa)
+        ;
+
+        
+    
+    
+            var marker_579f065e532bc8243b2891054f2e8421 = L.marker(
+                [25.1782474518, 121.6891860962],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_7e90b8ad2397eeb0b762948dde235d65 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b02e1849e047002cfb4f2d1447091625 = $(`<div id="html_b02e1849e047002cfb4f2d1447091625" style="width: 100.0%; height: 100.0%;">機構名稱: 財團法人天下為公社會福利慈善事業基金會附設新北市私立萬里社區長照機構<br>地址: 新北市萬里區瑪鋉路123號6樓</div>`)[0];
+                popup_7e90b8ad2397eeb0b762948dde235d65.setContent(html_b02e1849e047002cfb4f2d1447091625);
+            
+        
+
+        marker_579f065e532bc8243b2891054f2e8421.bindPopup(popup_7e90b8ad2397eeb0b762948dde235d65)
+        ;
+
+        
+    
+    
+            var marker_7d0d5650f1c7a745c91d2f072d87c65b = L.marker(
+                [25.1782474518, 121.6891860962],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_f7255969af8696cefac88d6d9f831c64 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_275fe9a79071e606b616be6d4124fcd1 = $(`<div id="html_275fe9a79071e606b616be6d4124fcd1" style="width: 100.0%; height: 100.0%;">機構名稱: 財團法人天下為公社會福利慈善事業基金會附設新北市私立萬里社區長照機構<br>地址: 新北市萬里區瑪鋉路123號6樓</div>`)[0];
+                popup_f7255969af8696cefac88d6d9f831c64.setContent(html_275fe9a79071e606b616be6d4124fcd1);
+            
+        
+
+        marker_7d0d5650f1c7a745c91d2f072d87c65b.bindPopup(popup_f7255969af8696cefac88d6d9f831c64)
+        ;
+
+        
+    
+    
+            var marker_6209df7f169e5dedaf2fd4d1703ee02d = L.marker(
+                [25.1782474518, 121.6891860962],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_a1bb1b5b6d499e82487f950f88865ab0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5f77484ec9bb3725740093f05db46403 = $(`<div id="html_5f77484ec9bb3725740093f05db46403" style="width: 100.0%; height: 100.0%;">機構名稱: 財團法人天下為公社會福利慈善事業基金會附設新北市私立萬里社區長照機構<br>地址: 新北市萬里區瑪鋉路123號6樓</div>`)[0];
+                popup_a1bb1b5b6d499e82487f950f88865ab0.setContent(html_5f77484ec9bb3725740093f05db46403);
+            
+        
+
+        marker_6209df7f169e5dedaf2fd4d1703ee02d.bindPopup(popup_a1bb1b5b6d499e82487f950f88865ab0)
+        ;
+
+        
+    
+    
+            var marker_4639ae6f8810c03be2c88c64f194c3d0 = L.marker(
+                [22.8047580719, 120.2978363037],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_8a08012c2cd4d7eda4b4fe687cd18a76 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c5229a17206127b5e15490887010cbdd = $(`<div id="html_c5229a17206127b5e15490887010cbdd" style="width: 100.0%; height: 100.0%;">機構名稱: 社團法人台灣康復輔具及照護技術交流協會附設高雄市私立台灣康復居家長照機構(岡山區台上里C)<br>地址: 高雄市岡山區富貴西街123號</div>`)[0];
+                popup_8a08012c2cd4d7eda4b4fe687cd18a76.setContent(html_c5229a17206127b5e15490887010cbdd);
+            
+        
+
+        marker_4639ae6f8810c03be2c88c64f194c3d0.bindPopup(popup_8a08012c2cd4d7eda4b4fe687cd18a76)
+        ;
+
+        
+    
+    
+            var marker_2a33797627d376291da7ecd2af82a197 = L.marker(
+                [24.9015884399, 121.0469436646],
+                {
+}
+            ).addTo(map_75d2b6383407c22561315e3bf426c79d);
+        
+    
+        var popup_230b69301a951451840759d9b695ee2e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_77770991890f85e9c6d4d02ea1e7a5a0 = $(`<div id="html_77770991890f85e9c6d4d02ea1e7a5a0" style="width: 100.0%; height: 100.0%;">機構名稱: 富康活力明湖藥局<br>地址: 新竹縣湖口鄉中正路一段123號1樓</div>`)[0];
+                popup_230b69301a951451840759d9b695ee2e.setContent(html_77770991890f85e9c6d4d02ea1e7a5a0);
+            
+        
+
+        marker_2a33797627d376291da7ecd2af82a197.bindPopup(popup_230b69301a951451840759d9b695ee2e)
+        ;
+
+        
+    
+</script>
+</html>

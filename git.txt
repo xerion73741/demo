@@ -1,0 +1,38 @@
+#### 第一次建立及上傳 git ####
+
+# 1. 進入你的專案資料夾（如果還沒cd進去）
+cd 你的專案路徑
+
+# 2. 初始化 Git 倉庫
+git init
+
+# 3. 加入所有檔案
+git add .
+
+# 4. 第一次 commit
+git commit -m "Initial commit"
+
+# 5. 將當前分支改名為 main
+git branch -m master main
+
+# 6. （選擇性）確認分支改名成功
+git branch
+
+# 7. 新增遠端倉庫，換成你的 GitHub repo URL
+git remote add origin https://github.com/你的帳號/你的倉庫名稱.git
+
+# 8. 推送 main 分支到遠端，並設定 upstream（追蹤遠端分支）
+git push -u origin main
+
+----------------------------------------------------------------------------
+
+#### 之後上傳流程 ####
+
+# 1. 暫存所有修改過、加入的新檔案
+git add .
+
+# 2. 提交 commit，填上這次修改的說明
+git commit -m "你的這次修改內容說明"
+
+# 3. 推送到遠端 GitHub main 分支
+git push
