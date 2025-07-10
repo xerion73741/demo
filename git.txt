@@ -9,7 +9,7 @@ git init
 # 3. 加入所有檔案
 git add .
 
-# 4. 第一次 commit
+# 4. 第一次 commit, github是載下來改的不用這段
 git commit -m "Initial commit"
 
 # 5. 將當前分支改名為 main
@@ -19,7 +19,7 @@ git branch -m master main
 git branch
 
 # 7. 新增遠端倉庫，換成你的 GitHub repo URL
-git remote add origin https://github.com/你的帳號/你的倉庫名稱.git
+git remote add origin hhttps://github.com/xerion73741/Flask_LongTermCare_Projec.git
 
 # 8. 推送 main 分支到遠端，並設定 upstream（追蹤遠端分支）
 git push -u origin main
