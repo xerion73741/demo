@@ -39,7 +39,7 @@ git push
 
 ---------------------------------------
 Git + GitHub 常用操作流程筆記
-1. 查看狀態與版本紀錄
+# 1. 查看狀態與版本紀錄
 查看當前工作區狀態（有哪些修改、哪些檔案被追蹤）
 git status                      # 查看當前狀態
 git log --oneline --graph --all # 簡潔版歷史紀錄
@@ -53,7 +53,7 @@ git branch <branch-name>  # 新建分支
 git checkout <branch-name> # 切換分支
 git branch -d <branch-name> # 刪除分支
 
-2. 本地操作：編輯、分支管理
+# 2. 本地操作：編輯、分支管理
 新建分支（但還沒切換）
 git branch <branch-name>
 
@@ -63,25 +63,30 @@ git checkout <branch-name>
 刪除本地分支（確認不需要後）
 git branch -d <branch-name>
 
-3. 修改管理
+# 3. 修改管理
 取消暫存（把 staged 狀態還原為未暫存）
 git restore --staged <file>
 
 放棄工作區的所有未提交改動（注意會直接覆蓋，務必確定不要重要修改）
 git reset --hard
 
-4. 提交紀錄
+# 4. 提交紀錄
 修改最新 commit（適用修改 commit 訊息或補充檔案）
 git commit --amend
 （進入編輯後，按 Esc 輸入 :wq 並 Enter）
 
-5. 遠端倉庫操作（GitHub）
+# 5. 遠端倉庫操作（GitHub）
 將本地 commit 推送到遠端倉庫（上傳）
 git push                          # 推送到遠端
 git pull                          # 從遠端拉取並合併（下載＋合併，若有衝突需手動處理）
 git rm --cached -r <name>         # 停止追蹤檔案（刪除暫存區中的檔案，但保留本地檔案）
 
-6. 進階：重寫 commit 歷史
+git rm <file>                    # 在本機工作目錄刪除檔案
+git rm -r --cached <file>
+git commit -m "刪除 git.txt 檔案"  # commit 這次刪除
+git push                          # 到遠端同步刪除
+
+# 6. 進階：重寫 commit 歷史
 git rebase               # 開始重組 Commit
 git rebase --continue    # 繼續 Rebase
 git rebase --abort       # 放棄 Rebase
