@@ -46,7 +46,7 @@ git push
 
 # 查看修改：git status
 
-# 列出所有分支：git branch
+# 查看所有分支：git branch
 
 # 新建分支：git branch name
 
@@ -58,8 +58,7 @@ git push
 
 # 從遠端拉最新版本回本地（下載＋合併，衝突手動處理）：git pull
 
-# 修改最新 commit（修改完再按 esc，輸入 :wq 並 Enter）
-git commit --amend
+# 修改最新 commit（修改完再按 esc，輸入 :wq 並 Enter）: git commit --amend
 
 # 停止追蹤：git rm --cached -r name
 
