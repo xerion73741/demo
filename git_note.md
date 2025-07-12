@@ -92,3 +92,13 @@ git rebase               # 開始重組 Commit
 git rebase --continue    # 繼續 Rebase
 git rebase --abort       # 放棄 Rebase
 
+----------------------------------
+# 7. 還原
+git log --oneline 查看 commit 版本紀錄
+git checkout ID --<file>
+git status
+git add .
+git commit -m "還原 login.html"
+git push
+
+--------------------------------------
