@@ -29,8 +29,7 @@ def home():
 #  登入頁（GET）post進來不會觸發
 @app.route('/login', methods=['GET'])
 def login_form():
-    name = request.cookies.get('userName')
-    return render_template('login.html', userName=name)
+    return render_template('login.html')
 
 #  登入處理（POST）
 @app.route('/login', methods=['POST'])

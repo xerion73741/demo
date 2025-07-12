@@ -83,8 +83,8 @@ git pull                          # 從遠端拉取並合併（下載＋合併�
 git rm --cached -r <name>         # 停止追蹤檔案（刪除暫存區中的檔案，但保留本地檔案）
 
 git rm <file>                     # 在本機工作目錄刪除檔案
-git rm -r --cached <file>
-git commit -m "刪除 git.txt 檔案"  # commit 這次刪除
+git rm --cached <file>            # 取消版本控制
+git commit -m "刪除 git.txt 檔案"  # commit 這次刪除 
 git push                          # 到遠端同步刪除
 
 # 6. 進階：重寫 commit 歷史
