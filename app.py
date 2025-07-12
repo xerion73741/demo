@@ -1,8 +1,9 @@
-from flask import Flask, render_template, request, redirect, make_response, session
+from flask import Flask, render_template, request, redirect, make_response, session, url_for
 import sqlite3
 import re  # for email validation
 from crawler import crawl_news
 from longterm_care_map import create_longtermcare_map
+from functools import wraps
 
 app = Flask(__name__)
 app.secret_key = 'Gail secret key'
@@ -11,14 +12,19 @@ app.secret_key = 'Gail secret key'
 def is_valid_email(email):
    return re.match(r"[^@]+@[^@]+\.[^@]+", email)
 
+def login_required(view_func):
+    @wraps(view_func)
+    def wrapper(*args, **kwargs):
+        if session.get('logined') != '1':
+            return redirect(url_for('login_form'))
+        return view_func(*args, **kwargs)
+    return wrapper
+
 # 🔸 首頁
 @app.route('/')
 def home():
-    if "logined" in session and session["logined"] == "1":
         name = request.cookies.get('userName')
         return render_template('home.html', userName=name)
-    else:
-        return redirect('/login')
     
 #  登入頁（GET）post進來不會觸發
 @app.route('/login', methods=['GET'])
@@ -26,19 +32,17 @@ def login_form():
     name = request.cookies.get('userName')
     return render_template('login.html', userName=name)
 
-@app.route("/news", methods=["GET", "POST"]) # 新聞
-def news():
-    news_list = crawl_news()
-    return render_template("news.html", news_list=news_list)
-
 #  登入處理（POST）
 @app.route('/login', methods=['POST'])
 def login():
     user = request.form['user']
     passwd = request.form['passwd']
-    name = request.form['name']
+    # name = request.form['name']
 
+    
     conn = sqlite3.connect('users.db')
+    # 將 sql execute 拿出來的資料變成 dict
+    # conn.row_factory = sqlite3.Row 
     cursor = conn.cursor()
     cursor.execute("SELECT * FROM users WHERE username = ?", (user,))
     result = cursor.fetchone()
@@ -48,8 +52,10 @@ def login():
         db_passwd = result[2]
         db_name = result[3]
         if passwd == db_passwd:
+            # make_response 是為了 set_cookie
             resp = make_response(render_template('home.html', userName=db_name))
             resp.set_cookie('userName', db_name)
+            # session Flask會自動回傳給 user
             session['logined'] = "1"
             return resp
         else:
@@ -92,9 +98,12 @@ def register():
 @app.route('/logout')
 def logout():
     session.pop('logined', None)
-    return redirect('/login')
+    resp = make_response(redirect('/login'))
+    resp.set_cookie('userName', '', expires=0)
+    return resp
 
 @app.route('/search', methods=["POST", "GET"])
+@login_required
 def search():
     if request.method == 'POST':
         city = request.form.get('city')
@@ -113,6 +122,12 @@ def search():
     # 如果沒有東西進來
     else:
         return render_template('search.html')
+
+@app.route("/news", methods=["GET", "POST"]) # 新聞
+@login_required
+def news():
+    news_list = crawl_news()
+    return render_template("news.html", news_list=news_list)
 
 if __name__ == '__main__':
     app.run(debug=True, use_reloader=False)

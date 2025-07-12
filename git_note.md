@@ -78,10 +78,11 @@ git commit --amend
 # 5. 遠端倉庫操作（GitHub）
 將本地 commit 推送到遠端倉庫（上傳）
 git push                          # 推送到遠端
+git clone <url>                   # 抓整包專案
 git pull                          # 從遠端拉取並合併（下載＋合併，若有衝突需手動處理）
 git rm --cached -r <name>         # 停止追蹤檔案（刪除暫存區中的檔案，但保留本地檔案）
 
-git rm <file>                    # 在本機工作目錄刪除檔案
+git rm <file>                     # 在本機工作目錄刪除檔案
 git rm -r --cached <file>
 git commit -m "刪除 git.txt 檔案"  # commit 這次刪除
 git push                          # 到遠端同步刪除

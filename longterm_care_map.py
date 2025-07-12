@@ -1,4 +1,3 @@
-import pandas as pd
 import folium
 from longterm_care_db import LongTermCareDB
 
